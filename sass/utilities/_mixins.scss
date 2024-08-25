@@ -1,0 +1,73 @@
+@mixin grids{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8, 1fr);
+    justify-content: center;
+    margin: 10px 10px;
+    gap: 10px;
+}
+
+@mixin titulos{
+    position: absolute;
+    font-family: nexa-heavy;
+    color: $colortextosecundario;
+    font-size: map-get($map: $fuentes-tam, $key:primero);
+    text-align: center;
+}
+
+
+
+@mixin container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    margin: 30px 30px;
+    gap: 10px;
+}
+
+@mixin boton{
+    .boton{
+        padding: 10px 40px;
+        border-top: 2px solid rgba(110, 110, 110, 0.24);
+        background-color: #99999971;
+        font-weight: 500;
+        font-style:normal;
+        a{
+            color: $colortextoprincipal;
+            font-family: cafe;
+        }
+    }
+}
+
+@mixin media1024{
+    @media(max-width:1024px){
+        @content;
+    }
+}
+
+@mixin media768{
+    @media(max-width:768px){
+        @content;
+    }
+}
+
+@mixin media425{
+    @media(max-width:425px){
+        @content;
+    }
+}
+
+@mixin media375 {
+    @media(max-width:375px){
+        @content;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+@include media425{
+    .portada-principal{
+        height: 300px;
+        img{
+            height: 300px
+        }
+        .titulo-1{
+            @include titulos;
+            margin-top: -38%;
+            margin-left: 13%;
+            font-size: map-get($map: $fuentes-tam, $key:segundo);
+        }
+        .titulo-2{
+            @include titulos;
+            margin-top: -36%;
+            margin-left: 1%;
+            font-size: map-get($map: $fuentes-tam, $key:segundo);
+        }
+        .titulo-3{
+            @include titulos;
+            margin-top: -38%;
+            margin-left: 2.5%;
+            font-size: map-get($map: $fuentes-tam, $key:segundo);
+        }
+        .titulo-4{
+            @include titulos;
+            margin-top: -33%;
+            margin-left: 25%;
+            font-size: map-get($map: $fuentes-tam, $key:segundo);
+        }
+        .titulo-5{
+            @include titulos;
+            margin-top: -35%;
+            margin-left: 1%;
+            font-size: map-get($map: $fuentes-tam, $key:segundo);
+        }
+    }
+    .textos{
+        width: 90%;
+        margin-left: 20px;
+        .subtitulo-1{
+            font-size: map-get($map: $fuentes-tam, $key:cuarto);
+        }
+    }
+    .portada-02{
+        width: 90%;
+        height: 400px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 290px;
+        margin-bottom: 80px;
+        .wrap{
+            .foto-01{
+                grid-row: 1;
+                justify-content: center;
+            }
+            h2{
+                top: 98%;
+                left: 28%;
+            }
+        }
+        .wrap-01{
+            .foto-02{
+                grid-row: 2;
+               margin-right: 0.5px;
+                
+            }
+            h2{
+                top: 121%;
+                left: 35%;    
+            }
+        }
+    }  
+    .container{
+        width: 80%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        margin-top: 100px;
+        margin-left: 13px;
+        margin-bottom: 20px;
+        gap:5px;
+        img{
+            margin-left:80px;
+            margin-bottom: 5px;
+            width: 16%;
+            object-fit: contain;
+            }
+        p{
+            margin-left: 60px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: cafe-bold;
+            font-weight: 500;
+            color: $colortextoprincipal;
+            font-size: map-get($map: $fuentes-tam, $key:cuarto );
+        }
+    }
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }
+    .contaniner-2{
+        margin-bottom: 60px;
+        gap: 10px;
+        .title{
+            font-size: 10px;
+        }
+        .desciption{
+            font-size: 8px;
+        }
+        
+    }
+    .frase{
+        .frase-texto{
+                font-size: map-get($map: $fuentes-tam, $key:segundo);
+            }
+        }
+    .eslogan{
+            width:90%;
+            height: 180px;
+            margin-top: 120px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+            .preguntas{
+                font-size: map-get($map: $fuentes-tam, $key:segundo);
+            }
+   }
+   .eslogan-1{
+    width: 100%;
+    height: 180px;
+    margin-top: 530px;
+    margin-bottom: 10px;
+    .preguntas{
+        font-size: map-get($map: $fuentes-tam, $key:segundo);
+    }
+}
+    form{
+        margin-left: 60px;
+        margin-top: 480px;
+    }
+   .buton{
+     .boton{
+        margin-inline-start:38%;
+        margin-bottom: 8%;
+    }
+   }
+   .buton-2{
+    .boton{
+        margin-left: -5px;
+  }
+    
+}
+}
